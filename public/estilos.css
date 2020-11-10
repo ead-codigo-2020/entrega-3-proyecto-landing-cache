@@ -1,5 +1,5 @@
-.logotype {
-    width: 10%;
+.logotipo {
+    size: 2px;
 }
 .container {
     padding-right: 1%;
@@ -7,4 +7,7 @@
 }
 .nav-link {
     padding: 2%;
+}
+.card-img-overlay {
+
 }
