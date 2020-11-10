@@ -59,6 +59,7 @@
         <p class="lead">Es un área de almacenamiento dedicada a la recuperación a gran velocidad de los datos usados o solicitados con más frecuencia que permite reutilizar de forma eficaz los datos procesados con anterioridad.</p>
       </div>
     </div>
+    <!-- Fin Cabecera-->
     <!-- Funciones -->
     <div class="d-flex justify-content-center">
       <div class="card" style="width: 18rem;">
@@ -93,6 +94,99 @@
           <h5 class="card-title">Almacenamiento de datos</h5>
           <p class="card-text">Elimina los registros menos usados para hacer espacio a datos nuevos.</p>
         </div>
+      </div>
+    </div>
+      <!-- Fin Funciones-->
+      <!-- Tipos de caché-->
+      <div>
+        <h3>Tipos de caché</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Primera diapo de tipos de caché-->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center"> <!-- Poner una arriba de otra costado izquierdo-->
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Caché de disco duro</h5>
+                    <p class="card-text">Es una porción de memoria RAM asociada a un disco. Almacena datos recientemente leídos y agiliza su carga en el caso de que sean solicitados otra vez.</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Caché de pista</h5>
+                    <p class="card-text">Es una memoria de estado sólido, tipo RAM, dentro del disco duro. Utiliza memorias construidas con semiconductores para almacenar la información.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta que describe caché web (principal: su largo es igual al de pista y disco duro juntos) -->
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Caché web</h5>
+                  <p class="card-text">Es la encargada del almacenamiento temporal de documentos web, como páginas web, imágenes y otros tipos de multimedia para reducir el ancho de banda consumido, la carga de los servidores y el retraso de las descargas. Un caché web almacena copias de los documentos que pasan por él, de forma que subsiguientes peticiones pueden ser respondidas por el propio caché, si se cumplen ciertas condiciones.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="Privados" aria-selected="true">Home</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="Compartidos" aria-selected="false">Profile</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="Pasarela" aria-selected="false">Contact</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Están presenten en los navegadores web y sólo funcionan para un único usuario.</div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Son utilizados por los proveedores de servicios de Internet y empresas para ahorrar ancho de banda. La comparten todos los usuarios que accedan.</div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Funcionan como respaldo de un servidor web de tal forma transparente para los usuarios. Es posible trabajar con varias cache pasarela de manera conjunta para implementar una Content Delivery Network.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>        
+      </div>
+      <!-- Componentes -->
+      <div class="list-group">
+        <!-- L1 -->
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">L1</h5>
+          </div>
+          <p class="mb-1">
+            <ul>
+              <li>Memoria pequeña y rápida que está constituida en la CPU.</li>
+              <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
+            </ul>
+          </p>
+        </a>
+        <!-- L2 -->
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">L2</h5>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+        <!-- L3 -->
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">L3</h5>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
       </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
