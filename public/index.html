@@ -101,6 +101,7 @@
     </div>
       <!-- Fin Funciones-->
       <!-- Tipos de caché-->
+      <div class="container">
         <h3>Tipos de caché</h3>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -157,7 +158,8 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>        
+        </div> 
+      </div>       
       <!-- Fin tipos de caché-->
       <!-- Componentes, no se pudo solucionar el hecho de que no se vean las imagenes emergentes -->
       <div class="container">
@@ -263,6 +265,10 @@
         </div>
       </div> <!-- Fin componentes segunda opción -->
     <!-- Mecanismo -->
+    <div class="container">
+      <h3>Mecanismo</h3>
+      <img src="images/esquemainicialmecanismo.png" alt="esquema inicio de macenismo">
+    </div>
     <!-- Cierre mecanismo -->
     <!-- Correspondencia -->
     <div class="container">
@@ -273,18 +279,38 @@
         Cantidad mínima de información quepuede estar presente o no en memoria principal o memoria caché
       </div>
       <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          Link with href
-        </a>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          Button with data-target
+          Directa
         </button>
       </p>
       <div class="collapse" id="collapseExample">
         <div class="card card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          <p>Cada bloque tiene su posición en el caché y siempre en el mismo lugar.</p>
+          <img src="images/Correspondenciadirecta.png" alt="Directa">
         </div>
       </div>
+      <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Totalmente asociativa
+      </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada en cada uno de ellos hasta llegar a un acierto.</p>
+          <img src="images/Correspondenciatotalmenteasociativa.png" alt="asociativa">
+        </div>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Asociativa por conjuntos
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Es una mezcla de las anteriores, se forman conjuntos de los bloques de la memoria principal, pero ellos pueden estar asignados a cualquier bloque de la memoria caché</p>
+          <img src="images/Correspondenciaasociativaporconjuntos.png" alt="asociativa por conjuntos">
+        </div>
+      </div>
+    </div>
     <!-- Cierre correspondencia -->
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
