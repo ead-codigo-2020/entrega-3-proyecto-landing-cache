@@ -1,3 +1,37 @@
+h2 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 2em;  
+}
+
+h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 1em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.col-12, .col-sm-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 5em;
+    padding-left: 5em;  
+}
+
+.bi {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
 .logotipo {
     width: 100px;
     padding-top: 0.8em;
@@ -25,11 +59,13 @@
     padding: 2%;
 }
 
-.imagen-componentes { 
-    width: 10em;
+.img-componentes { 
+    width: 18em;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
+    
 
 .img-correspondencias {
     width: 40em;
@@ -41,7 +77,6 @@
     width: 60em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-    align-content: space-between;
 }
 
 .img-posibilidad {
@@ -49,3 +84,66 @@
     padding-top: 0.8em;
     padding-bottom: 0.8em;
 }
+
+.jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    border-radius: 0;
+}
+
+li {
+    padding: 5px;
+    text-align: center;
+}
+ 
+.card {
+    margin: 40px;
+    padding: 30px;
+    border: none;
+  }
+  
+  /* Flip Cards CSS */
+  .card-container {
+    display: grid;
+    perspective: 700px;
+  }
+  
+  .card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+  }
+  
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+  
+  .front {
+    grid-area: frontAndBack;
+    background-color:  rgb(230, 230, 230);
+  }
+  
+  .back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+    background-color: white;
+  }
+  
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+  
+
+footer {
+    background-color: rgb(26, 26, 26);
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
