@@ -32,8 +32,12 @@ p {
     margin-bottom: 20px;  
 }
 
-.logotipo {
-    width: 100px;
+.bg-light {
+    background-color: white !important;
+}
+
+.logotipo-navbar {
+    width: 12em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
 }
@@ -60,7 +64,7 @@ p {
 }
 
 .img-componentes { 
-    width: 18em;
+    width: 15em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -97,7 +101,7 @@ li {
     padding: 5px;
     text-align: center;
 }
- 
+
 .card {
     margin: 40px;
     padding: 30px;
@@ -136,7 +140,37 @@ li {
   
   .card-container:hover .card-flip {
     transform: rotateY(180deg);
+}
+  
+.mecanismo-text {
+    font-size: 1.2rem;
+    font-weight: auto;
+    line-height: 1.2;
+    text-align: center;
+    padding: 2em;
+}
+
+.swap-on-hover {
+    position: relative;	
+    margin:  0 auto;
   }
+  
+  .swap-on-hover img {
+    position: absolute;
+    overflow: hidden;
+    max-width:100%;
+    width:auto;
+    height:auto;
+  }
+  
+  .swap-on-hover .swap-on-hover__front-image {
+    z-index: 9999;
+    transition: opacity .5s linear;
+  }
+  
+  .swap-on-hover:hover > .swap-on-hover__front-image{
+    opacity: 0;
+}
   
 
 footer {
