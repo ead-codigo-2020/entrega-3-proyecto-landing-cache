@@ -79,6 +79,11 @@ p {
     padding-bottom: 0.8em;
 }
 
+.container-img-esquema {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .img-posibilidad {
     width: 30em;
     padding-top: 0.8em;
