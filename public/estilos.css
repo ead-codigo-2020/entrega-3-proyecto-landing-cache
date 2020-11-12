@@ -80,6 +80,7 @@ p {
 }
 
 .container-img-esquema {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
 }
