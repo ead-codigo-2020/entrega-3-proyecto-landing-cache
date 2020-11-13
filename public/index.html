@@ -105,23 +105,38 @@
             <div class="container">
               <h3>Tipos</h3>
               <div class="row">
-               <div class="col-md-8 col-lg-7">
-                  <div class="card card-inverse card-primary">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, saepe? Quibusdam, sequi libero? Perspiciatis esse vitae corrupti animi quo repellat, 
-                       harum saepe quis et alias voluptatem ut explicabo necessitatibus voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, consequatur repudiandae accusantium deserunt dolorum ratione aliquid, voluptatum dolorem minima enim, praesentium aperiam deleniti impedit! 
-                       Enim quod laborum praesentium facilis pariatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate enim facilis aspernatur ea quia est alias iure animi! Pariatur, voluptate nesciunt? Laboriosam, tempore? Fugit placeat eius quod, corrupti explicabo debitis?</p>
+               <div class="col-md-8 col-lg-6">
+                  <div class="card card-inverse card-primary cache-web">
+                    <h4>Caché web</h4>
+                     <p>Es la encargada del almacenamiento temporal de
+                      documentos web, como páginas web, imágenes y
+                      otros tipos de multimedia para reducir el ancho de
+                      banda consumido, la carga de los servidores y el
+                      retraso de las descargas. Un caché web almacena
+                      copias de los documentos que pasan por él, de forma que subsiguientes peticiones pueden ser res-
+                      pondidas por el propio caché, si se cumplen ciertas condiciones.</p>
                   </div>
                </div>
-               <div class="col-md-1 col-lg-4">
+               <div class="col-md-1 col-lg-6">
                   <div class="card card-inverse card-primary">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, qui molestias. Ab, sint necessitatibus.</p>
-                  </div>
-                  <div class="col-md-1 col-lg-4">
-                     <div class="card card-inverse card-primary">
-                        <p></p>
-                     </div>
+                    <h4>Caché de disco</h4>
+                    <p>Es una porción de memoria RAM asociada a un disco, con
+                      el fin de almacenar datos recientemente leídos y agilizar
+                      su carga en el caso de que sean solicitados otra vez. Puede
+                      mejorar notablemente el rendimiento de las aplicaciones,
+                      dado que acceder a un byte de datos en RAM puede ser
+                      miles de veces más rápido que acceder a un byte del disco
+                      duro.</p>
                   </div>
                </div>
+                <div class="col-md-1 col-lg-4">
+                      <div class="card card-inverse card-primary">
+                        <h4>Caché de pista</h4>
+                          <p>Es una memoria de estado sólido tipo RAM cuyo uso 
+                          generalmente se limita a las supercomputadoras por su 
+                          costo tan elevado.</p>
+                      </div>
+                </div>
               </div>
             </div>
          </section>
@@ -142,8 +157,8 @@
                           <h4 class="card-title text-center">L1</h4>
                           <p class="card-text">
                             <ul>
-                              <li>Memoria pequeña y rápida que está constituida en la CPU</li>
-                              <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
+                              <li class="text-left">Memoria pequeña y rápida que está constituida en la CPU</li>
+                              <li class="text-left">Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
                             </ul>
                           </p>
                       </div>
@@ -169,8 +184,8 @@
                         <h4 class="card-title text-center">L2</h4>
                         <p class="card-text">
                           <ul>
-                            <li>Almacena la información recientemente visitada de los programas.</li>
-                            <li>Es más grande pero menos rápida que la memoria L1</li>
+                            <li class="text-left">Almacena la información recientemente visitada de los programas.</li>
+                            <li class="text-left">Es más grande pero menos rápida que la memoria L1</li>
                           </ul>
                         </p>
                      </div>
@@ -196,9 +211,9 @@
                         <h4 class="card-title text-center">L3</h4>
                         <p class="card-text">
                           <ul>
-                            <li>Ubicada en el chip del procesador.</li>
-                            <li>La de mayor tamaño y también la más lenta.</li>
-                            <li>Se utiliza para alimentar a la memoria caché L2</li>
+                            <li class="text-left">Ubicada en el chip del procesador.</li>
+                            <li class="text-left">La de mayor tamaño y también la más lenta.</li>
+                            <li class="text-left">Se utiliza para alimentar a la memoria caché L2</li>
                           </ul>
                         </p>
                      </div>
@@ -228,7 +243,7 @@
                   los datos en la fundición de caché, intentará acceder a él desde la memoria principal. 
                   En este caso decimos que perdimos el objetivo (Cache Miss).
                </p>
-               FALTA RESOLVER ESTO PORQUE SE SUPERPONE A EL FOOTER
+               FALTA RESOLVER ESTO PORQUE SE SUPERPONE AL FOOTER
                <div class="mecanismo-swap">
                 <figure class="swap-on-hover">
                   <img  class="swap-on-hover__front-image" src="images/mecanismo.png" alt="Mecanismo">

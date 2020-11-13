@@ -150,8 +150,12 @@ li {
     padding: 1em;
 }
 
+/* .cache-web{ 
+    min-height: 30em;
+} */
+
 .card {
-    margin: 40px;
+    margin: 10px;
     padding: 30px;
     border: none;
   }
@@ -173,6 +177,10 @@ li {
   .card-flip div {
     backface-visibility: hidden;
     transform-style: preserve-3d;
+  }
+
+  .card-text ul{
+      text-align: left;
   }
   
   .front {
