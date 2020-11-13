@@ -14,7 +14,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 2em;
-    margin-bottom: 2em;  
+    margin-bottom: 3.5em;  
 }
 
 h3 {
@@ -111,7 +111,6 @@ p {
     vertical-align: middle;
 }
     
-
 .img-correspondencias {
     width: 40em;
     padding-top: 0.8em;
@@ -215,6 +214,7 @@ li {
 .swap-on-hover {
     position: relative;	
     margin:  0 auto;
+
   }
   
   .swap-on-hover img {
