@@ -257,6 +257,7 @@
               </div>
             </div>
          </section>
+         <!--Correspondencia-->
          <section class="compatibilidad-seccion" id="correspondencia">
           <div class="container">
             <h2>Correspondencia</h2>
@@ -265,10 +266,24 @@
                 <div class="col-md-5">
                   <div role="tabpanel">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li role="presentation"><a href="#" aria-controls="" data-toggle="" role="tab">Directa</a></li>
-                      <li role="presentation"><a href="#" aria-controls="" data-toggle="" role="tab">Totalmente asociativa</a></li>
-                      <li role="presentation"><a href="#" aria-controls="" data-toggle="" role="tab">Asociativa por conjuntos</a></li>
+                      <li role="presentation" class="active"><a href="#directa" aria-controls="directa" data-toggle="tab" role="tab">Directa</a></li>
+                      <li role="presentation"><a href="#totalmente" aria-controls="totalmente" data-toggle="tab" role="tab">Totalmente asociativa</a></li>
+                      <li role="presentation"><a href="#conjuntos" aria-controls="conjuntos" data-toggle="tab" role="tab">Asociativa por conjuntos</a></li>
                     </ul>
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="directa">
+                        <p class="correspondencia-p">Cada bloque tiene su posición en el caché</p>
+                        <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="totalmente">
+                        <p class="correspondencia-p">Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada uno de ellos hasta llegar a acierto.</p>
+                        <img src="images/Correspondenciatotalmenteasociativa.png" alt="esquema de correspondencia totalmente" class="correspondencia-esquema">
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="conjuntos">
+                        <p class="correspondencia-p">Es una mezcla de las anteriores, se forman conjuntos de bloques de la memoria principal, pero ellos pueden estar asignados a cualquien bloque de la memoria caché.</p>
+                        <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
