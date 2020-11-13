@@ -225,7 +225,56 @@
       </section>
     <!-- Cierre mecanismo -->
     <!-- Correspondencia arreglar sistema-->
+<<<<<<< HEAD
     
+=======
+      <section class="altura-a-b">
+    <div class="container">
+      <h2>Correspondencia</h2>
+      <p>Cada dato de la memoria principal, que se guarda en la memoria caché está organizado a través de bloques, lo que permite un rápido acceso, estos bloques (los de la memoria principal y caché) están relacionados de las siguientes maneras</p>
+      <div class="alert alert-dark" role="alert">
+        Bloque:
+        Cantidad mínima de información quepuede estar presente o no en memoria principal o memoria caché
+      </div>
+      <!-- Directa -->
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Directa
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Cada bloque tiene su posición en el caché y siempre en el mismo lugar.</p>
+          <img class="img-correspondencias" src="images/Correspondenciadirecta.png" alt="Directa">
+        </div>
+      </div>
+      <!-- Asociativa -->
+      <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Totalmente asociativa
+      </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada en cada uno de ellos hasta llegar a un acierto.</p>
+          <img class="img-correspondencias" src="images/Correspondenciatotalmenteasociativa.png" alt="asociativa">
+        </div>
+      </div>
+      <!-- Asociativa por conjunto -->
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Asociativa por conjuntos
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Es una mezcla de las anteriores, se forman conjuntos de los bloques de la memoria principal, pero ellos pueden estar asignados a cualquier bloque de la memoria caché</p>
+          <img class="img-correspondencias" src="images/Correspondenciaasociativaporconjuntos.png" alt="asociativa por conjuntos">
+        </div>
+      </div>
+    </div>
+      </section>
+>>>>>>> parent of df5b12f... correción ortográfica
     <!-- Cierre correspondencia -->
   </main>
     <!-- Pie -->
