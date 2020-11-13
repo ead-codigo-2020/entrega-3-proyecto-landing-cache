@@ -1,240 +1,384 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="estilos.css" type="text/css">
-    
-    <!-- JS -->
-    <script src="entrega-3-proyecto-landing-cache/src/js/script.js"></script>
-    
-    <title>Caché</title>
-  </head>
-
-  <body>
-    <!-- NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarcaché">
-      <div class="container">
-        <!-- Logo -->
-        <img src="images/logopagina.png" alt="logopagina" class="logotipo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-       <!-- NavBar items -->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#funtion">Funciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#componentes">Tipos de caché</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#componentes">Componentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mecanismo">Mecanismo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#correspondencia">Correspondencia</a>
-            </li>
-          </ul>
-        </div> <!-- Cierre items-->
-      </div>
-    </nav> <!-- Fin NavBar-->
-    <!-- Cabecera -->
-    <header>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <!-- Estilos CSS -->
+      <link rel="stylesheet" href="estilos.css" type="text/css">
+      <!-- JS -->
+      <script src="entrega-3-proyecto-landing-cache/src/js/script.js"></script>
+      <title>Caché</title>
+   </head>
+   <body>
+      <!-- NavBar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+            <!-- Logo -->
+            <img src="images/logotipo-light.png" alt="logopagina" class="logotipo-navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NavBar items -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Funciones</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Tipos de caché</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Componentes</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Mecanismo</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Correspondencia</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- Cierre items-->
+         </div>
+      </nav>
+      <!-- Fin NavBar-->
+      <!-- Cabecera -->
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">¿Qué es la memoria caché?</h1>
-          <p class="lead">Es un área de almacenamiento dedicada a la recuperación a gran velocidad de los datos usados o solicitados con más frecuencia que permite reutilizar de forma eficaz los datos procesados con anterioridad.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Descubre más</a>
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>¿Qué es la <br>memoria caché?</h1>
+            </div>
+            <div class="col-lg-6 text-center">
+              <p class="header-text">
+                Es un área de almacenamiento dedicada a la recuperación a gran velocidad de los datos usados o solicitados con más 
+                frecuencia que permite reutilizar de forma eficaz los datos procesados con anterioridad.
+              </p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Descubre más</a>
+            </div>
+          </div>
         </div>
       </div>
-  </header>
-    <!-- Fin Cabecera-->
-    <!-- Funciones -->
-    <main>
-      <section class="altura-a-b">
-        <div class="container">
-          <h2 id="funtion">Función</h2>
-          <div class="row">
-            <div class="col-12 col-sm-4 text-center">
-              <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-clock-history" fill="darkslateblue" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
-                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
-                <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
-              </svg>
-              <h5>Reducción de latencia</h5>
-              <p>Opera menor tiempo en acceder a los datos desde la memoria.</p>
+      <!-- Fin Cabecera-->
+      <!-- Funciones -->
+      <main>
+         <section class="funciones-seccion">
+            <div class="container">
+               <h2>Funciones</h2>
+               <div class="row">
+                  <div class="col-12 col-sm-4 text-center">
+                     <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-clock-history" fill="#0b699f" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                        <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                     </svg>
+                     <h5>Reducción de latencia</h5>
+                     <p>Opera menor tiempo en acceder a los datos desde la memoria.</p>
+                  </div>
+                  <div class="col-12 col-sm-4 text-center">
+                     <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-bar-chart" fill="#0b699f" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                     </svg>
+                     <h5>Mejor rendimiento del ancho de banda</h5>
+                     <p>Reduce el ancho de banda y aumenta la velocidad de descarga.</p>
+                  </div>
+                  <div class="col-12 col-sm-4 text-center">
+                     <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-folder-check" fill="#0b699f" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M9.828 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91H9v1H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181L15.546 8H14.54l.265-2.91A1 1 0 0 0 13.81 4H9.828zm-2.95-1.707L7.587 3H2.19c-.24 0-.47.042-.684.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293z"/>
+                        <path fill-rule="evenodd" d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                     </svg>
+                     <h5>Almacenamiento de datos</h5>
+                     <p>Elimina los registros menos usados para hacer espacio a datos nuevos.</p>
+                  </div>
+               </div>
             </div>
-            <div class="col-12 col-sm-4 text-center">
-              <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-bar-chart" fill="darkslateblue" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
-              </svg>
-              <h5>Mejor rendimiento del ancho de banda</h5>
-              <p>Reduce el ancho de banda y aumenta la velocidad de descarga.</p>
-            </div>
-            <div class="col-12 col-sm-4 text-center">
-              <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-folder-check" fill="darkslateblue" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M9.828 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91H9v1H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181L15.546 8H14.54l.265-2.91A1 1 0 0 0 13.81 4H9.828zm-2.95-1.707L7.587 3H2.19c-.24 0-.47.042-.684.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293z"/>
-                <path fill-rule="evenodd" d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z"/>
-              </svg>
-              <h5>Almacenamiento de datos</h5>
-              <p>Elimina los registros menos usados para hacer espacio a datos nuevos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Fin de Funciones-->
-      <!--Componentes-->
-      <section class="altura-a-b">
-        <div class="container">
-          <h2 id="componentes">Componentes</h2>
-        </div>
-        <div class="container">
-          <div class="row">
-            <!-- Componente L1 -->
-            <div class="col-md-4 card-container">
-              <div class="card-flip">
-                <!-- L1 Front -->
-                <div class="card front">
-                  <span class="fa fa-4x fa-smile-o text-center"></span>
-                  <div class="card-block">
-                    <h4 class="card-title text-center">L1</h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>Memoria pequeña y rápida que está constituida en la CPU</li>
-                        <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
-                      </ul>
-                    </p>
+         </section>
+         <!--Fin de Funciones-->
+         <!--Tipos de Cache-->
+         <section class="tipos-seccion">
+            <div class="container">
+              <h3>Tipos</h3>
+              <div class="row">
+                <div class="col-md-8 col-lg-6">
+                  <div class="card card-inverse card-primary cache-card cache-disco">
+                    <h4>Caché de disco</h4>
+                    <p>Es una porción de memoria RAM asociada a un disco, con
+                      el fin de almacenar datos recientemente leídos y agilizar
+                      su carga en el caso de que sean solicitados otra vez. Puede
+                      mejorar notablemente el rendimiento de las aplicaciones,
+                      dado que acceder a un byte de datos en RAM puede ser
+                      miles de veces más rápido que acceder a un byte del disco
+                      duro.</p>
                   </div>
                 </div>
-                <!-- Fin L1 Front -->
-        
-                <!-- L1 Back -->
-                <div class="card back">
-                  <div class="card-block">
-                    <img class="img-componentes" src="images/L1.png" alt="esquema destaca L1">
+                <div class="col-md-1 col-lg-6">
+                  <div class="card card-inverse card-primary cache-card">
+                    <h4>Caché web</h4>
+                     <p>Es la encargada del almacenamiento temporal de copias de
+                      documentos web, como páginas web, imágenes y
+                      otros tipos de multimedia para reducir el ancho de
+                      banda consumido, la carga de los servidores y el
+                      retraso de las descargas.</p>
                   </div>
+                  <div class="col-md-1 col-lg-12 cache-pista">
+                    <div class="card card-inverse card-primary cache-card">
+                      <h4>Caché de pista</h4>
+                        <p>Es una memoria de estado sólido tipo RAM cuyo uso 
+                        generalmente se limita a las supercomputadoras por su 
+                        costo tan elevado.</p>
+                    </div>
                 </div>
-                <!-- Fin L1 Back -->
+                </div>
               </div>
             </div>
-            <!-- Fin L1 -->
+         </section>
+         <!--Componentes-->
+         <section class="componentes-seccion">
+            <div class="container">
+               <h2>Componentes</h2>
+            </div>
+            <div class="container">
+              <div class="row">
+               <!-- Componente L1 -->
+                <div class="col-md-4 card-container">
+                  <div class="card-flip">
+                  <!-- L1 Front -->
+                    <div class="card front">
+                      <span class="fa fa-4x fa-smile-o text-center"></span>
+                      <div class="card-block">
+                          <h4 class="card-title text-center">L1</h4>
+                          <p class="card-text">
+                            <ul class="componentes">
+                              <li>Memoria pequeña y rápida que está constituida en la CPU.</li>
+                              <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
+                            </ul>
+                          </p>
+                      </div>
+                    </div>
+                  <!-- Fin L1 Front -->
+                  <!-- L1 Back -->
+                  <div class="card back">
+                     <div class="card-block">
+                        <img class="img-componentes" src="images/L1.png" alt="Level 1 del caché">
+                     </div>
+                  </div>
+                  <!-- Fin L1 Back -->
+                  </div>
+                </div>
+                <!-- Fin L1 -->
+                <!-- Componente L2 -->
+                <div class="col-md-4 card-container">
+               <div class="card-flip">
+                  <!-- L2 Front -->
+                  <div class="card front">
+                     <span class="fa fa-4x fa-smile-o text-center"></span>
+                     <div class="card-block">
+                        <h4 class="card-title text-center">L2</h4>
+                        <p class="card-text">
+                          <ul class="componentes">
+                            <li>Almacena la información recientemente visitada de los programas.</li>
+                            <li>Es más grande pero menos rápida que la memoria L1.</li>
+                          </ul>
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Fin L2 Front -->
+                  <!-- L2 Back -->
+                  <div class="card back">
+                     <div class="card-block">
+                        <img class="img-componentes" src="images/L2.png" alt="Level 2 del caché">
+                     </div>
+                  </div>
+                  <!-- Fin L2 Back -->
+               </div>
+                </div>
+                <!-- Fin L2 -->
+                <!-- Componente L3 -->
+                <div class="col-md-4 card-container">
+               <div class="card-flip">
+                  <!-- L3 Front -->
+                  <div class="card front">
+                     <span class="fa fa-4x fa-smile-o text-center"></span>
+                     <div class="card-block">
+                        <h4 class="card-title text-center">L3</h4>
+                        <p class="card-text">
+                          <ul class="componentes">
+                            <li>Ubicada en el chip del procesador.</li>
+                            <li>La de mayor tamaño y también la más lenta.</li>
+                            <li>Se utiliza para alimentar a la memoria caché L2.</li>
+                          </ul>
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Fin L3 Front -->
+                  <!-- L3 Back -->
+                  <div class="card back">
+                     <div class="card-block">
+                        <img class="img-componentes" src="images/L3.png" alt="Level 3 del caché">
+                     </div>
+                  </div>
+                  <!-- Fin L3 Back -->
+               </div>
+                </div>
+                <!-- Fin L3 -->
+              </div>
+            </div>
+         </section>
+         <!--Fin Componentes-->
+         <!--Mecanismo-->
+         <section class="mecanismo-seccion">
+            <div class="container">
+               <h2>Mecanismo</h2>
+               <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p class="mecanismo-text">Cuando el procesador busca datos para realizar una operación, primero intenta
+                      encontrarlos en la memoria caché. Si la CPU es capaz de encontrarlo, la memoria
+                      caché ha golpeado el destino (Cache Hit).<br><br> Si la unidad de procesamiento no encuentra 
+                      los datos en la fundición de caché, intentará acceder a él desde la memoria principal. 
+                      En este caso decimos que perdimos el objetivo (Cache Miss).
+                   </p>
+                  </div>
+                  <div class="col-lg-6 text-center">
+                    <div class="mecanismo-swap">
+                      <figure class="swap-on-hover">
+                        <img  class="swap-on-hover__front-image" src="images/mecanismo.png" alt="Mecanismo">
+                        <img class="swap-on-hover__back-image" src="images/mecanismo-hover.png" alt="Mecanismo hit">
+                      </figure> 
+                   </div>
+                 </div>
+               </div>
+              </div>
+            </div>
+         </section>
+      </main>
 
-            <!-- Componente L2 -->
-            <div class="col-md-4 card-container">
-              <div class="card-flip">
-                <!-- L2 Front -->
-                <div class="card front">
-                  <span class="fa fa-4x fa-smile-o text-center"></span>
-                  <div class="card-block">
-                    <h4 class="card-title text-center">L2</h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>Almacena la información recientemente visitada de los programas.</li>
-                        <li>Es más grande pero menos rápida que la memoria L1</li>
+      <!--Footer-->
+      <footer class="footer-area footer--light">
+          <div class="footer-big">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 col-sm-12">
+                  <div class="footer-widget">
+                    <div class="widget-about">
+                      <img class="logotipo-footer" src="images/logotipo-dark.png" alt="logopagina">
+                      <p class="footer-text">Caché es un proyecto de landing page
+                        que busca educar e informar sobre
+                        una de las herramientas de informática de mayor uso en nuestra vida cotidiana: la memoria caché.
+                        <br><br>Realizado por alumnos de la Escuela
+                        de Arquitectura y Diseño para el ramo
+                        científico Diseño desde el Código</p>
+                      <img class="logotipo-escuela" src="images/Logoescuela.png" alt="logoescuela">
+                    </div>
+                  </div>
+                </div>
+                <!--Seccion Contactos-->
+                <div class="col-md-3 col-sm-5">
+                  <div class="footer-widget">
+                    <div class="footer-menu">
+                      <h6 class="footer-widget-title">Contacto</h6>
+                      <ul class="contact-details">
+                        <li class="footer-li">
+                          <p class="footer-text">Martina García Carcamo</p>
+                          <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a>
+                        </li>
+                        <li class="footer-li">
+                          <p class="footer-text">Paula Herrera Orlandini</p>
+                          <a href="mailto:paula.herrera.o@mail.pucv.cl">paula.herrera.o@mail.pucv.cl</a>
+                        </li>
+                        <li class="footer-li">
+                          <p class="footer-text">Camilo Salamanca García</p>
+                          <a href="mailto:camilo.salamanca.g@mail.pucv.cl">camilo.salamanca.g@mail.pucv.cl</a>
+                        </li>
                       </ul>
+                    </div>
+                  </div>
+                  <!-- Fin Seccion Contactos-->
+                </div>
+                 <!-- Seccion Contenido-->
+                <div class="col-md-3 col-sm-4">
+                  <div class="footer-widget">
+                    <div class="footer-menu no-padding">
+                      <h6 class="footer-widget-title">Contenido</h6>
+                      <ul>
+                        <li class="footer-li">
+                          <a href="#">Inicio</a>
+                        </li>
+                        <li class="footer-li">
+                          <a href="#">Funciones</a>
+                        </li>
+                        <li class="footer-li">
+                          <a href="#">Tipos</a>
+                        </li>
+                        <li class="footer-li">
+                          <a href="#">Componentes</a>
+                        </li>
+                        <li class="footer-li">
+                          <a href="#">Mecanismo</a>
+                        </li>
+                        <li class="footer-li">
+                          <a href="#">Correspondencia</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                 <!-- Fin Seccion Contenido-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Copyright-->
+          <div class="mini-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="copyright-text">
+                    <p class="footer-text">© 2020 Caché. Todos los derechos reservados. Creado por
+                      <a href="#">Grupo 4 - Caché</a>
                     </p>
                   </div>
                 </div>
-                <!-- Fin L2 Front -->
-        
-                <!-- L2 Back -->
-                <div class="card back">
-                  <div class="card-block">
-                    <img class="img-componentes" src="images/L2.png" alt="esquema destaca L2">
-                  </div>
-                </div>
-                <!-- Fin L2 Back -->
               </div>
             </div>
-            <!-- Fin L2 -->
-
-            <!-- Componente L3 -->
-            <div class="col-md-4 card-container">
-              <div class="card-flip">
-                <!-- L3 Front -->
-                <div class="card front">
-                  <span class="fa fa-4x fa-smile-o text-center"></span>
-                  <div class="card-block">
-                    <h4 class="card-title text-center">L3</h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>Ubicada en el chip del procesador.</li>
-                        <li>La de mayor tamaño y también la más lenta.</li>
-                        <li>Se utiliza para alimentar a la memoria caché L2</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <!-- Fin L3 Front -->
-        
-                <!-- L3 Back -->
-                <div class="card back">
-                  <div class="card-block">
-                    <img class="img-componentes" src="images/L3.png" alt="esquema destaca L3">
-                  </div>
-                </div>
-                <!-- Fin L3 Back -->
-              </div>
-            </div>
-            <!-- Fin L3 -->
+            <!--Fin Copyright-->
           </div>
-        </div>
-      </section>
-      <!--Fin Componentes-->   
-    <!-- Mecanismo -->
-      <section class="altura-a-b">
-      <div class="container">
-        <h2 id="mecanismo">Mecanismo</h2>
-        <div class="container-img-esquema">
-          <img class="img-esquema img-fluid" src="images/esquemainicialmecanismo.png" alt="esquema inicio de mecanismo">
-        </div>
-        <p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Hit</a>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Miss</button>
-        </p>
-        <div class="row">
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                <img class="img-posibilidad" src="images/posibilidaddehit.png" alt="Hit">
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-              <div class="card card-body">
-                <img class="img-posibilidad" src="images/posibilidaddefalla.png" alt="Miss">
-              </div>
-            </div>
-          </div>
+<<<<<<< HEAD
         </div>
       </div>
       </section>
     <!-- Cierre mecanismo -->
     <!-- Correspondencia arreglar sistema-->
-<<<<<<< HEAD
-    
-=======
       <section class="altura-a-b">
     <div class="container">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 37750f24ea924413978f3ced8a6373e43db14049
       <h2>Correspondencia</h2>
+=======
+      <h2 id="correspondencia">Correspondencia</h2>
+>>>>>>> parent of f38d967... corrección validator, se borra sección correspondencia
+<<<<<<< HEAD
+=======
+=======
+      <h2 id="correspondencia">Correspondencia</h2>
+>>>>>>> parent of f38d967... corrección validator, se borra sección correspondencia
+=======
+      <h2 id="correspondencia">Correspondencia</h2>
+>>>>>>> parent of f38d967... corrección validator, se borra sección correspondencia
+>>>>>>> 37750f24ea924413978f3ced8a6373e43db14049
       <p>Cada dato de la memoria principal, que se guarda en la memoria caché está organizado a través de bloques, lo que permite un rápido acceso, estos bloques (los de la memoria principal y caché) están relacionados de las siguientes maneras</p>
       <div class="alert alert-dark" role="alert">
         Bloque:
-        Cantidad mínima de información quepuede estar presente o no en memoria principal o memoria caché
+        Cantidad mínima de información que puede estar presente o no en memoria principal o memoria caché
       </div>
       <!-- Directa -->
       <p>
@@ -274,7 +418,6 @@
       </div>
     </div>
       </section>
->>>>>>> parent of df5b12f... correción ortográfica
     <!-- Cierre correspondencia -->
   </main>
     <!-- Pie -->
@@ -294,11 +437,9 @@
               Caché es un proyecto de landing page que busca educar e informar sobre una de las herramientas de informática de mayor uso en nuestra vida cotidiana: la memoria caché.
               Realizado por alumnos de la Escuela de Arquitectura y Diseño para el ramo científico Diseño desde el Código.</th>
             <th>
-              <ul>
-                <li>Martina García <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a></li>
-                <li>Paula Herrera <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a></li>
-                <li>Camilo Salamanca <a href="mailto:camilo.salamanca.g@mail.pucv.cl">camilo.salamanca.g@mail.pucv.cl</a></li>
-              </ul>
+              Martina García <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a>
+              Paula Herrera <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a>
+              Camilo Salamanca <a href="mailto:camilo.salamanca.g@mail.pucv.cl">camilo.salamanca.g@mail.pucv.cl</a>
             </th>
             <th>
               <a href="#">Función</a>
@@ -319,3 +460,9 @@
       </table>
     </div>
   </footer>
+=======
+      </footer>
+
+   </body>
+</html>
+>>>>>>> e7219bf21f96c73a76e2ce58bf80bab980680b3a
