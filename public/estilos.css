@@ -312,6 +312,10 @@ footer {
     position: relative;
 }
 
+.footer-widget-title {
+    padding-left: 2em;
+}
+
 .footer-text {
     color: white;
     font-weight: 100;
@@ -322,6 +326,7 @@ footer {
     text-decoration: none;
     text-align: left;
     list-style-type: none;
+    padding-left: -1em;
 }
 
 .correspondencia-esquema {
