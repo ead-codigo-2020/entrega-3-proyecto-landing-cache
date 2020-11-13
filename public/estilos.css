@@ -150,12 +150,13 @@ li {
     padding: 1em;
 }
 
-.cache-card {
-    position: relative;
+.cache-pista {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .cache-disco {
-    min-height: 30em;
+    min-height: 29em;
     position: relative;
 }
 
