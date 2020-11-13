@@ -23,7 +23,7 @@
             </button>
             <!-- NavBar items -->
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-               <ul class="navbar-nav ml-auto mt-2 mt-lg-0 smooth-scroll">
+               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
                      <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                   </li>
@@ -55,12 +55,16 @@
             <div class="col-lg-6">
               <h1>¿Qué es la <br>memoria caché?</h1>
             </div>
-            <div class="col-lg-6 text-center smooth-scroll">
+            <div class="col-lg-6 text-center">
               <p class="header-text">
                 Es un área de almacenamiento dedicada a la recuperación a gran velocidad de los datos usados o solicitados con más 
                 frecuencia que permite reutilizar de forma eficaz los datos procesados con anterioridad.
               </p>
+<<<<<<< HEAD
               <a class="btn btn-primary btn-lg shadow-lg" href="#funciones" role="button">Descubre más</a>
+=======
+              <a class="btn btn-primary btn-lg" href="#" role="button">Descubre más</a>
+>>>>>>> 24445283990f46aa1d78da034409a47098cc6ae4
             </div>
           </div>
         </div>
@@ -106,28 +110,29 @@
               <h3>Tipos</h3>
               <div class="row">
                 <div class="col-md-8 col-lg-6">
-                  <div class="card card-inverse card-primary cache-card cache-disco shadow-lg">
-                    <h4>Caché de disco</h4>
-                    <p>Es una porción de memoria RAM asociada a un disco, con
-                      el fin de almacenar datos recientemente leídos y agilizar
-                      su carga en el caso de que sean solicitados otra vez. Puede
-                      mejorar notablemente el rendimiento de las aplicaciones,
-                      dado que acceder a un byte de datos en RAM puede ser
-                      miles de veces más rápido que acceder a un byte del disco
-                      duro.</p>
-                  </div>
-                </div>
-                <div class="col-md-1 col-lg-6">
-                  <div class="card card-inverse card-primary cache-card shadow-lg">
-                    <h4>Caché web</h4>
-                     <p>Es la encargada del almacenamiento temporal de copias de
+                  <div class="card card-inverse card-primary cache-card cache-web">
+                    <h4 class="cache-web-titulo">Caché web</h4>
+                    <p class="cache-web-text">Es la encargada del almacenamiento temporal de
                       documentos web, como páginas web, imágenes y
                       otros tipos de multimedia para reducir el ancho de
                       banda consumido, la carga de los servidores y el
-                      retraso de las descargas.</p>
+                      retraso de las descargas. Un caché web almacena
+                      copias de los documentos que pasan por él, de forma que
+                      subsiguientes peticiones pueden ser respondidas por el 
+                      propio caché, si se cumplen ciertas condiciones.</p>
+                      <a class="btn btn-secondary btn-lg" href="#" role="button">Descubre más</a>
+                  </div>
+                </div>
+                <div class="col-md-1 col-lg-6">
+                  <div class="card card-inverse card-primary cache-card">
+                    <h4>Caché de disco</h4>
+                    <p>Es una porción de memoria RAM asociada a
+                      un disco. Almacena datos recientemente leídos 
+                      y agiliza su carga en el caso de que sean
+                      solicitados otra vez.</p>
                   </div>
                   <div class="col-md-1 col-lg-12 cache-pista">
-                    <div class="card card-inverse card-primary cache-card shadow-lg">
+                    <div class="card card-inverse card-primary cache-card">
                       <h4>Caché de pista</h4>
                         <p>Es una memoria de estado sólido tipo RAM cuyo uso 
                         generalmente se limita a las supercomputadoras por su 
@@ -257,36 +262,11 @@
               </div>
             </div>
          </section>
-         <!--Correspondencia-->
-         <section class="compatibilidad-seccion" id="correspondencia">
+         <section class="compatibilidad-seccion" id="compatibilidad">
           <div class="container">
-            <h2>Correspondencia</h2>
+            <h2>Compatibilidad</h2>
             <div class="container">
-              <div class="row">
-                <div class="col-md-5">
-                  <div role="tabpanel">
-                    <ul class="nav nav-tabs" role="tablist">
-                      <li role="presentation" class="active"><a href="#directa" aria-controls="directa" data-toggle="tab" role="tab">Directa</a></li>
-                      <li role="presentation"><a href="#totalmente" aria-controls="totalmente" data-toggle="tab" role="tab">Totalmente asociativa</a></li>
-                      <li role="presentation"><a href="#conjuntos" aria-controls="conjuntos" data-toggle="tab" role="tab">Asociativa por conjuntos</a></li>
-                    </ul>
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane active" id="directa">
-                        <p class="correspondencia-p">Cada bloque tiene su posición en el caché</p>
-                        <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
-                      </div>
-                      <div role="tabpanel" class="tab-pane" id="totalmente">
-                        <p class="correspondencia-p">Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada uno de ellos hasta llegar a acierto.</p>
-                        <img src="images/Correspondenciatotalmenteasociativa.png" alt="esquema de correspondencia totalmente" class="correspondencia-esquema">
-                      </div>
-                      <div role="tabpanel" class="tab-pane" id="conjuntos">
-                        <p class="correspondencia-p">Es una mezcla de las anteriores, se forman conjuntos de bloques de la memoria principal, pero ellos pueden estar asignados a cualquien bloque de la memoria caché.</p>
-                        <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
          </section>
