@@ -228,7 +228,7 @@ li {
     background-color: white;
   }
   
-  .card-container:hover .card-flip {
+.card-container:hover .card-flip {
     transform: rotateY(180deg);
 }
   
@@ -239,6 +239,7 @@ li {
     text-align: center;
     padding: 2em;
 }
+
 
 .swap-on-hover {
     position: relative;	
