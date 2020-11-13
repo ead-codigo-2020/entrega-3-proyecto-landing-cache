@@ -203,9 +203,11 @@ li {
   }
   
   .swap-on-hover img {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
   }
   
   .swap-on-hover .swap-on-hover__front-image {
@@ -238,6 +240,10 @@ li {
     padding-bottom: 6em;
 }
 
+.mecanismo-swap { 
+    position: relative;
+}
+
 footer {
     background-color: rgb(26, 26, 26);
     padding-right: 1em;
@@ -245,6 +251,7 @@ footer {
     padding-top: 4em;
     padding-bottom: 3em;
     text-align-last: left;
+    position: relative;
 }
 
 .footer-text {
