@@ -131,36 +131,36 @@
                <h2>Componentes</h2>
             </div>
             <div class="container">
-            <div class="row">
-            <!-- Componente L1 -->
-            <div class="col-md-4 card-container">
-               <div class="card-flip">
+              <div class="row">
+               <!-- Componente L1 -->
+                <div class="col-md-4 card-container">
+                  <div class="card-flip">
                   <!-- L1 Front -->
-                  <div class="card front">
-                     <span class="fa fa-4x fa-smile-o text-center"></span>
-                     <div class="card-block">
-                        <h4 class="card-title text-center">L1</h4>
-                        <p class="card-text">
-                          <ul>
-                            <li>Memoria pequeña y rápida que está constituida en la CPU</li>
-                            <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
-                          </ul>
-                        </p>
-                     </div>
-                  </div>
+                    <div class="card front">
+                      <span class="fa fa-4x fa-smile-o text-center"></span>
+                      <div class="card-block">
+                          <h4 class="card-title text-center">L1</h4>
+                          <p class="card-text">
+                            <ul>
+                              <li>Memoria pequeña y rápida que está constituida en la CPU</li>
+                              <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
+                            </ul>
+                          </p>
+                      </div>
+                    </div>
                   <!-- Fin L1 Front -->
                   <!-- L1 Back -->
                   <div class="card back">
                      <div class="card-block">
-                        <img class="img-componentes" src="images/L1.png">
+                        <img class="img-componentes" src="images/L1.png" alt="Level 1 del caché">
                      </div>
                   </div>
                   <!-- Fin L1 Back -->
-               </div>
-            </div>
-            <!-- Fin L1 -->
-            <!-- Componente L2 -->
-            <div class="col-md-4 card-container">
+                  </div>
+                </div>
+                <!-- Fin L1 -->
+                <!-- Componente L2 -->
+                <div class="col-md-4 card-container">
                <div class="card-flip">
                   <!-- L2 Front -->
                   <div class="card front">
@@ -179,15 +179,15 @@
                   <!-- L2 Back -->
                   <div class="card back">
                      <div class="card-block">
-                        <img class="img-componentes" src="images/L2.png">
+                        <img class="img-componentes" src="images/L2.png" alt="Level 2 del caché">
                      </div>
                   </div>
                   <!-- Fin L2 Back -->
                </div>
-            </div>
-            <!-- Fin L2 -->
-            <!-- Componente L3 -->
-            <div class="col-md-4 card-container">
+                </div>
+                <!-- Fin L2 -->
+                <!-- Componente L3 -->
+                <div class="col-md-4 card-container">
                <div class="card-flip">
                   <!-- L3 Front -->
                   <div class="card front">
@@ -207,13 +207,15 @@
                   <!-- L3 Back -->
                   <div class="card back">
                      <div class="card-block">
-                        <img class="img-componentes" src="images/L1.png">
+                        <img class="img-componentes" src="images/L3.png" alt="Level 3 del caché">
                      </div>
                   </div>
                   <!-- Fin L3 Back -->
                </div>
+                </div>
+                <!-- Fin L3 -->
+              </div>
             </div>
-            <!-- Fin L3 -->
          </section>
          <!--Fin Componentes-->
          <!--Mecanismo-->
@@ -227,15 +229,18 @@
                   En este caso decimos que perdimos el objetivo (Cache Miss).
                </p>
                FALTA RESOLVER ESTO PORQUE SE SUPERPONE A EL FOOTER
-               <figure class="swap-on-hover">
-                  <img  class="swap-on-hover__front-image" src="images/mecanismo.png"/>
-                  <img class="swap-on-hover__back-image" src="images/mecanismo-hover.png"/>
-               </figure>
+               <div class="mecanismo-swap">
+                <figure class="swap-on-hover">
+                  <img  class="swap-on-hover__front-image" src="images/mecanismo.png" alt="Mecanismo">
+                  <img class="swap-on-hover__back-image" src="images/mecanismo-hover.png" alt="Mecanismo hit">
+                </figure>
+              </div>
             </div>
          </section>
+      </main>
 
-         <!--Footer-->
-         <footer class="footer-area footer--light">
+      <!--Footer-->
+      <footer class="footer-area footer--light">
           <div class="footer-big">
             <div class="container">
               <div class="row">
@@ -259,8 +264,8 @@
                     <div class="footer-menu">
                       <h6 class="footer-widget-title">Contacto</h6>
                       <ul class="contact-details">
-                        <p class="footer-text">Martina García Carcamo</p>
                         <li class="footer-li">
+                          <p class="footer-text">Martina García Carcamo</p>
                           <a href="mailto:support@aazztech.com">support@aazztech.com</a>
                         </li>
                         <li class="footer-li">
@@ -268,7 +273,7 @@
                           <a href="mailto:support@aazztech.com">support@aazztech.com</a>
                         </li>
                         <li class="footer-li">
-                          <p class="footer-text">Camilo Salamanca</p>
+                          <p class="footer-text">Camilo Salamanca García</p>
                           <a href="mailto:support@aazztech.com">support@aazztech.com</a>
                         </li>
                       </ul>
@@ -323,7 +328,7 @@
             </div>
             <!--Fin Copyright-->
           </div>
-        </footer>
-      </main>
+      </footer>
+
    </body>
 </html>
