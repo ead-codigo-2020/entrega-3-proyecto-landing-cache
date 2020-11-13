@@ -112,10 +112,8 @@
                   <div class="card-block">
                     <h4 class="card-title text-center">L1</h4>
                     <p class="card-text">
-                      <ul>
-                        <li>Memoria pequeña y rápida que está constituida en la CPU</li>
-                        <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
-                      </ul>
+                      <li>Memoria pequeña y rápida que está constituida en la CPU</li>
+                      <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
                     </p>
                   </div>
                 </div>
@@ -124,7 +122,7 @@
                 <!-- L1 Back -->
                 <div class="card back">
                   <div class="card-block">
-                    <img class="img-componentes" src="images/L1.png" alt="esquema destaca L1">
+                    <img class="img-componentes" src="images/L1.png">
                   </div>
                 </div>
                 <!-- Fin L1 Back -->
@@ -141,10 +139,8 @@
                   <div class="card-block">
                     <h4 class="card-title text-center">L2</h4>
                     <p class="card-text">
-                      <ul>
-                        <li>Almacena la información recientemente visitada de los programas.</li>
-                        <li>Es más grande pero menos rápida que la memoria L1</li>
-                      </ul>
+                      <li>Almacena la información recientemente visitada de los programas.</li>
+                      <li>Es más grande pero menos rápida que la memoria L1</li>
                     </p>
                   </div>
                 </div>
@@ -153,7 +149,7 @@
                 <!-- L2 Back -->
                 <div class="card back">
                   <div class="card-block">
-                    <img class="img-componentes" src="images/L2.png" alt="esquema destaca L2">
+                    <img class="img-componentes" src="images/L2.png">
                   </div>
                 </div>
                 <!-- Fin L2 Back -->
@@ -170,11 +166,9 @@
                   <div class="card-block">
                     <h4 class="card-title text-center">L3</h4>
                     <p class="card-text">
-                      <ul>
-                        <li>Ubicada en el chip del procesador.</li>
-                        <li>La de mayor tamaño y también la más lenta.</li>
-                        <li>Se utiliza para alimentar a la memoria caché L2</li>
-                      </ul>
+                      <li>Ubicada en el chip del procesador.</li>
+                      <li>La de mayor tamaño y también la más lenta.</li>
+                      <li>Se utiliza para alimentar a la memoria caché L2</li>
                     </p>
                   </div>
                 </div>
@@ -183,15 +177,13 @@
                 <!-- L3 Back -->
                 <div class="card back">
                   <div class="card-block">
-                    <img class="img-componentes" src="images/L3.png" alt="esquema destaca L3">
+                    <img class="img-componentes" src="images/L3.png">
                   </div>
                 </div>
                 <!-- Fin L3 Back -->
               </div>
             </div>
             <!-- Fin L3 -->
-          </div>
-        </div>
       </section>
       <!--Fin Componentes-->   
     <!-- Mecanismo -->
@@ -225,7 +217,52 @@
       </section>
     <!-- Cierre mecanismo -->
     <!-- Correspondencia arreglar sistema-->
-    
+      <section class="altura-a-b">
+    <div class="container">
+      <h2 id="correspondencia">Correspondencia</h2>
+      <p>Cada dato de la memoria principal, que se guarda en la memoria caché está organizado a través de bloques, lo que permite un rápido acceso, estos bloques (los de la memoria principal y caché) están relacionados de las siguientes maneras</p>
+      <div class="alert alert-dark" role="alert">
+        Bloque:
+        Cantidad mínima de información que puede estar presente o no en memoria principal o memoria caché
+      </div>
+      <!-- Directa -->
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Directa
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Cada bloque tiene su posición en el caché y siempre en el mismo lugar.</p>
+          <img class="img-correspondencias" src="images/Correspondenciadirecta.png" alt="Directa">
+        </div>
+      </div>
+      <!-- Asociativa -->
+      <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Totalmente asociativa
+      </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada en cada uno de ellos hasta llegar a un acierto.</p>
+          <img class="img-correspondencias" src="images/Correspondenciatotalmenteasociativa.png" alt="asociativa">
+        </div>
+      </div>
+      <!-- Asociativa por conjunto -->
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Asociativa por conjuntos
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>Es una mezcla de las anteriores, se forman conjuntos de los bloques de la memoria principal, pero ellos pueden estar asignados a cualquier bloque de la memoria caché</p>
+          <img class="img-correspondencias" src="images/Correspondenciaasociativaporconjuntos.png" alt="asociativa por conjuntos">
+        </div>
+      </div>
+    </div>
+      </section>
     <!-- Cierre correspondencia -->
   </main>
     <!-- Pie -->
@@ -245,11 +282,9 @@
               Caché es un proyecto de landing page que busca educar e informar sobre una de las herramientas de informática de mayor uso en nuestra vida cotidiana: la memoria caché.
               Realizado por alumnos de la Escuela de Arquitectura y Diseño para el ramo científico Diseño desde el Código.</th>
             <th>
-              <ul>
-                <li>Martina García <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a></li>
-                <li>Paula Herrera <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a></li>
-                <li>Camilo Salamanca <a href="mailto:camilo.salamanca.g@mail.pucv.cl">camilo.salamanca.g@mail.pucv.cl</a></li>
-              </ul>
+              Martina García <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a>
+              Paula Herrera <a href="mailto:martina.garcia.c@mail.pucv.cl">martina.garcia.c@mail.pucv.cl</a>
+              Camilo Salamanca <a href="mailto:camilo.salamanca.g@mail.pucv.cl">camilo.salamanca.g@mail.pucv.cl</a>
             </th>
             <th>
               <a href="#">Función</a>
