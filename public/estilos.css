@@ -123,12 +123,6 @@ p {
     padding-bottom: 0.8em;
 }
 
-.img-esquema {
-    width: 60em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-}
-
 .img-posibilidad {
     width: 30em;
     padding-top: 0.8em;
@@ -328,4 +322,42 @@ footer {
     text-decoration: none;
     text-align: left;
     list-style-type: none;
+}
+
+.correspondencia-esquema {
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.tab-pane {
+    padding: 2em;
+}
+
+.correspondencia-text {
+    font-size: 1.2rem;
+    font-weight: auto;
+    line-height: 1.2;
+    text-align: left;
+    padding: 1em;
+}
+
+.correspondencia-seccion {
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+.subtitulo-correspondencia {
+    font-style: normal;
+}
+
+.parrafo-correspondencia {
+    max-width: 65ch;
+}
+
+.texto-principal-correspondencia {
+    font-size: 1.2rem;
+    font-weight: auto;
+    line-height: 1.2;
+    text-align: center;
+    padding: 2em;
 }
