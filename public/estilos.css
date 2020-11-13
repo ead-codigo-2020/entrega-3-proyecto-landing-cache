@@ -150,9 +150,14 @@ li {
     padding: 1em;
 }
 
-/* .cache-web{ 
+.cache-card {
+    position: relative;
+}
+
+.cache-disco {
     min-height: 30em;
-} */
+    position: relative;
+}
 
 .card {
     margin: 10px;
