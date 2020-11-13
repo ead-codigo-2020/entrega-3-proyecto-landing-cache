@@ -1,5 +1,10 @@
-.altura-a-b {
-    padding: 1em 0;
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
 }
 
 h2 {
@@ -9,7 +14,18 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 2em;
+    margin-bottom: 3.5em;  
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 2em;
     margin-bottom: 2em;  
+    margin-left: 2em;
 }
 
 h4 {
@@ -17,6 +33,14 @@ h4 {
     font-weight: 700;
     line-height: 1.2;
     margin-top: 1em;
+}
+
+h6 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 2em;  
 }
 
 p {
@@ -36,22 +60,36 @@ p {
     margin-bottom: 20px;  
 }
 
-.logotipo {
-    width: 100px;
+.bg-light {
+    background-color: white !important;
+}
+
+.btn-primary, .btn-lg {
+    background-color: #0b699f;
+    border-color: none;
+}
+
+.logotipo-navbar {
+    width: 12em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
 }
 
 .logotipo-footer {
-    width: 100px;
+    width: 15em;
     padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-bottom: 1.7em;
 }
 
 .logotipo-escuela {
-    width: 30em;
-    padding-top: 0.8em;
+    width: 15em;
+    padding-top: 1.8em;
     padding-bottom: 0.8em;
+}
+
+.jumbotron-fluid {
+    padding-right: 2em !important;
+    padding-left: 2em !important;
 }
 
 .container {
@@ -63,14 +101,16 @@ p {
     padding: 2%;
 }
 
+.img-contacto { 
+    width: 10px;
+}
+
 .img-componentes { 
-    width: 18em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    width: 16em;
+    margin-top: 0;
+    vertical-align: middle;
 }
     
-
 .img-correspondencias {
     width: 40em;
     padding-top: 0.8em;
@@ -81,13 +121,6 @@ p {
     width: 60em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-}
-
-.container-img-esquema {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 
 .img-posibilidad {
@@ -106,11 +139,28 @@ p {
 
 li {
     padding: 5px;
-    text-align: center;
 }
- 
+
+.header-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    padding: 1em;
+}
+
+.cache-pista {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cache-disco {
+    min-height: 29em;
+    position: relative;
+}
+
 .card {
-    margin: 40px;
+    margin: 10px;
     padding: 30px;
     border: none;
   }
@@ -133,6 +183,10 @@ li {
     backface-visibility: hidden;
     transform-style: preserve-3d;
   }
+
+  .card-text ul{
+      text-align: left;
+  }
   
   .front {
     grid-area: frontAndBack;
@@ -147,11 +201,102 @@ li {
   
   .card-container:hover .card-flip {
     transform: rotateY(180deg);
+}
+  
+.mecanismo-text {
+    font-size: 1.2rem;
+    font-weight: auto;
+    line-height: 1.2;
+    text-align: center;
+    padding: 2em;
+}
+
+.swap-on-hover {
+    position: relative;	
+    margin:  0 auto;
+
   }
   
+  .swap-on-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .swap-on-hover .swap-on-hover__front-image {
+    z-index: 9999;
+    transition: opacity .5s linear;
+  }
+  
+  .swap-on-hover:hover > .swap-on-hover__front-image{
+    opacity: 0;
+}
+  
+.funciones-seccion {
+    padding-top: 1em;
+    padding-bottom: 6em;
+}
+
+.tipos-seccion {
+    background-color: rgb(230, 230, 230);
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+.componentes-seccion {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.mecanismo-seccion {
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+.mecanismo-swap { 
+    position: relative;
+}
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome';
+  }
+  
+  ul.componentes { 
+      list-style-type: none; 
+      margin: 16px 0;
+      padding-left: 2em;
+}
+  .componentes li {
+      text-indent: -1.6em;
+}
+  .componentes li::before {
+      font-family: FontAwesome;
+      color: #0b699f;
+      content: "\f00c";
+      float: left;
+      width: 1.6em;
+}
 
 footer {
     background-color: rgb(26, 26, 26);
-    padding: 10em 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    text-align-last: left;
+    position: relative;
 }
 
+.footer-text {
+    color: white;
+    font-weight: 100;
+    margin-block-end: 0px;
+}
+
+.footer-li {
+    text-decoration: none;
+    text-align: left;
+    list-style-type: none;
+}
