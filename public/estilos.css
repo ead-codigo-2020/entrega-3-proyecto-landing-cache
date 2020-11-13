@@ -364,3 +364,7 @@ footer {
     max-width: 65ch;
     position: relative;
 }
+
+.btn-primary {
+    margin: 2em;
+}
