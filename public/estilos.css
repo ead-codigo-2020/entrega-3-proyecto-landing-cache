@@ -64,9 +64,15 @@ p {
     background-color: white !important;
 }
 
-.btn-primary, .btn-lg {
+.btn-primary {
     background-color: #0b699f;
     border-color: none;
+}
+
+.btn-secondary {
+    background-color: rgb(230, 230, 230);
+    border-color: none;
+    color: #0b699f;
 }
 
 .logotipo-navbar {
@@ -154,10 +160,33 @@ li {
     padding-right: 0;
 }
 
-.cache-disco {
-    min-height: 29em;
+.cache-web {
+    min-height: 28em;
     position: relative;
+    background-color: #0b699f;
 }
+
+.cache-web-titulo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 1em;
+    color: white;
+}
+
+.cache-web-text {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 1em;
+}
+
+.btn-light{
+    background-color: rgb(230, 230, 230);
+    border-color: none;
+    vertical-align: bottom;
+}
+
 
 .card {
     margin: 10px;
