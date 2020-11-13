@@ -1,3 +1,5 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
 h1 {
     font-size: 3rem;
     font-weight: 500;
@@ -104,10 +106,9 @@ p {
 }
 
 .img-componentes { 
-    width: 15em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    width: 16em;
+    margin-top: 0;
+    vertical-align: middle;
 }
     
 
@@ -139,7 +140,6 @@ p {
 
 li {
     padding: 5px;
-    text-align: center;
 }
 
 .header-text {
@@ -258,6 +258,26 @@ li {
     position: relative;
 }
 
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome';
+  }
+  
+  ul.componentes { 
+      list-style-type: none; 
+      margin: 16px 0;
+      padding-left: 2em;
+}
+  .componentes li {
+      text-indent: -1.6em;
+}
+  .componentes li::before {
+      font-family: FontAwesome;
+      color: #0b699f;
+      content: "\f00c";
+      float: left;
+      width: 1.6em;
+}
+
 footer {
     background-color: rgb(26, 26, 26);
     padding-right: 1em;
@@ -278,6 +298,4 @@ footer {
     text-decoration: none;
     text-align: left;
     list-style-type: none;
-    
-
 }
