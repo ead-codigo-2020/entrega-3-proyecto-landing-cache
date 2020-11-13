@@ -367,9 +367,20 @@ footer {
     line-height: 1.2;
     padding: 2em;
     max-width: 65ch;
-    position: relative;
+    padding-left: 1fr;
+    padding-right: 1fr;
 }
 
 .btn-primary {
     margin: 2em;
+}
+
+.imagen-cabecera {
+    width: 30%;
+    float: left;
+}
+
+.tarjetas-caché-web {
+    display: flex;
+    flex-wrap: wrap;
 }

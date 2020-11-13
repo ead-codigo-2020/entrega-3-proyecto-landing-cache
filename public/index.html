@@ -62,7 +62,30 @@
                 Es un área de almacenamiento dedicada a la recuperación a gran velocidad de los datos usados o solicitados con más 
                 frecuencia que permite reutilizar de forma eficaz los datos procesados con anterioridad.
               </p>
-              <a class="btn btn-primary btn-lg shadow-lg" href="#funciones" role="button">Descubre más</a>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalcabecera">
+                Descubre más
+              </button>
+                <!-- Modal cabecera -->
+                <div class="modal fade" id="modalcabecera" tabindex="-1" aria-labelledby="modalcabeceralLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Propiedades generales</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="images/esquemageneral.png" alt="esquema general" class="imagen-cabecera">
+                        <p class="modal-cabecera-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eos, commodi quaerat sequi voluptate cumque.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Cierre modal-->
             </div>
           </div>
         </div>
@@ -118,26 +141,45 @@
                       copias de los documentos que pasan por él, de forma que
                       subsiguientes peticiones pueden ser respondidas por el 
                       propio caché, si se cumplen ciertas condiciones.</p>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalweb">
                         Descubre más
                       </button>
                   </div>
                 </div>
                 <!-- Modal caché web -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalweb" tabindex="-1" aria-labelledby="modalwebLabel" aria-hidden="true">
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Tipos de caché web</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
+                          <span aria-hidden="true"></span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        Hola
+                        <div class="d-flex justify-content-center">
+                          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Privados</h5>
+                              <p class="card-text">Están presentes en los navegadores web y solo funcionan para un unico usuario</p>
+                            </div>
+                          </div>
+                          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Compartidos</h5>
+                              <p class="card-text">Son utilizados por los proveedores de servicios de Internet y empresas para ahorrar el ancho de banda. La comparten todos los usuarios que accedan.</p>
+                            </div>
+                          </div>
+                          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Pasarela</h5>
+                              <p class="card-text">Funcionan como respaldo de un servidor web de tal forma transparente para los usuarios. Es posible trabajar con varias caché de pasarela de manera conjunta para implementar una Content Delivery Network.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                       </div>
                     </div>
                   </div>
