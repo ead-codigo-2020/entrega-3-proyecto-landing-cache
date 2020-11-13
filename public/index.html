@@ -142,7 +142,7 @@
                           <h4 class="card-title text-center">L1</h4>
                           <p class="card-text">
                             <ul class="componentes">
-                              <li>Memoria pequeña y rápida que está constituida en la CPU</li>
+                              <li>Memoria pequeña y rápida que está constituida en la CPU.</li>
                               <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
                             </ul>
                           </p>
@@ -170,7 +170,7 @@
                         <p class="card-text">
                           <ul class="componentes">
                             <li>Almacena la información recientemente visitada de los programas.</li>
-                            <li>Es más grande pero menos rápida que la memoria L1</li>
+                            <li>Es más grande pero menos rápida que la memoria L1.</li>
                           </ul>
                         </p>
                      </div>
@@ -198,7 +198,7 @@
                           <ul class="componentes">
                             <li>Ubicada en el chip del procesador.</li>
                             <li>La de mayor tamaño y también la más lenta.</li>
-                            <li>Se utiliza para alimentar a la memoria caché L2</li>
+                            <li>Se utiliza para alimentar a la memoria caché L2.</li>
                           </ul>
                         </p>
                      </div>
@@ -222,19 +222,25 @@
          <section class="mecanismo-seccion">
             <div class="container">
                <h2>Mecanismo</h2>
-               <p class="mecanismo-text">Cuando el procesador busca datos para realizar una operación, primero intenta
-                  encontrarlos en la memoria caché. Si la CPU es capaz de encontrarlo, la memoria
-                  caché ha golpeado el destino (Cache Hit). Si la unidad de procesamiento no encuentra 
-                  los datos en la fundición de caché, intentará acceder a él desde la memoria principal. 
-                  En este caso decimos que perdimos el objetivo (Cache Miss).
-               </p>
-               <!--
-               FALTA RESOLVER ESTO PORQUE SE SUPERPONE A EL FOOTER
-               <div class="mecanismo-swap">
-                <figure class="swap-on-hover">
-                  <img  class="swap-on-hover__front-image" src="images/mecanismo.png" alt="Mecanismo">
-                  <img class="swap-on-hover__back-image" src="images/mecanismo-hover.png" alt="Mecanismo hit">
-                </figure> -->
+               <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p class="mecanismo-text">Cuando el procesador busca datos para realizar una operación, primero intenta
+                      encontrarlos en la memoria caché. Si la CPU es capaz de encontrarlo, la memoria
+                      caché ha golpeado el destino (Cache Hit).<br><br> Si la unidad de procesamiento no encuentra 
+                      los datos en la fundición de caché, intentará acceder a él desde la memoria principal. 
+                      En este caso decimos que perdimos el objetivo (Cache Miss).
+                   </p>
+                  </div>
+                  <div class="col-lg-6 text-center">
+                    <div class="mecanismo-swap">
+                      <figure class="swap-on-hover">
+                        <img  class="swap-on-hover__front-image" src="images/mecanismo.png" alt="Mecanismo">
+                        <img class="swap-on-hover__back-image" src="images/mecanismo-hover.png" alt="Mecanismo hit">
+                      </figure> 
+                   </div>
+                 </div>
+               </div>
               </div>
             </div>
          </section>
