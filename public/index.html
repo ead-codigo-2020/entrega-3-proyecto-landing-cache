@@ -70,11 +70,11 @@
                 Descubre más
               </button>
                 <!-- Modal cabecera -->
-                <div class="modal fade" id="modalcabecera" tabindex="-1" aria-labelledby="modalcabeceralLabel" aria-hidden="true">
+                <div class="modal fade" id="modalcabecera" tabindex="-1" aria-labelledby="modalcabecera" aria-hidden="true">
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Función general</h5>
+                        <h5 class="modal-title" id="modalcabecerafunción">Función general</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true"></span>
                         </button>
@@ -157,11 +157,11 @@
                   </div>
                 </div>
                 <!-- Modal caché web -->
-                <div class="modal fade" id="modalweb" tabindex="-1" aria-labelledby="modalwebLabel" aria-hidden="true">
+                <div class="modal fade" id="modalweb" tabindex="-1" aria-labelledby="modalweb" aria-hidden="true">
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tipos de caché web</h5>
+                        <h5 class="modal-title" id="modaltiposdeweb">Tipos de caché web</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true"></span>
                         </button>
@@ -229,13 +229,11 @@
                     <div class="card front">
                       <span class="fa fa-4x fa-smile-o text-center"></span>
                       <div class="card-block">
-                          <h4 class="card-title text-center">L1</h4>
-                          <p class="card-text">
-                            <ul class="componentes">
-                              <li>Memoria pequeña y rápida que está constituida en la CPU.</li>
-                              <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
-                            </ul>
-                          </p>
+                        <h4 class="card-title text-center">L1</h4>
+                        <ul class="componentes card-text">
+                          <li>Memoria pequeña y rápida que está constituida en la CPU.</li>
+                          <li>Almacena las instrucciones y datos que inmediatamente van a ser usados.</li>
+                        </ul>
                       </div>
                     </div>
                   <!-- Fin L1 Front -->
@@ -257,12 +255,10 @@
                      <span class="fa fa-4x fa-smile-o text-center"></span>
                      <div class="card-block">
                         <h4 class="card-title text-center">L2</h4>
-                        <p class="card-text">
-                          <ul class="componentes">
-                            <li>Almacena la información recientemente visitada de los programas.</li>
-                            <li>Es más grande pero menos rápida que la memoria L1.</li>
-                          </ul>
-                        </p>
+                        <ul class="componentes card-text">
+                          <li>Almacena la información recientemente visitada de los programas.</li>
+                          <li>Es más grande pero menos rápida que la memoria L1.</li>
+                        </ul>
                      </div>
                   </div>
                   <!-- Fin L2 Front -->
@@ -284,13 +280,11 @@
                      <span class="fa fa-4x fa-smile-o text-center"></span>
                      <div class="card-block">
                         <h4 class="card-title text-center">L3</h4>
-                        <p class="card-text">
-                          <ul class="componentes">
-                            <li>Ubicada en el chip del procesador.</li>
-                            <li>La de mayor tamaño y también la más lenta.</li>
-                            <li>Se utiliza para alimentar a la memoria caché L2.</li>
-                          </ul>
-                        </p>
+                        <ul class="componentes card-text">
+                          <li>Ubicada en el chip del procesador.</li>
+                          <li>La de mayor tamaño y también la más lenta.</li>
+                          <li>Se utiliza para alimentar a la memoria caché L2.</li>
+                        </ul>
                      </div>
                   </div>
                   <!-- Fin L3 Front -->
@@ -344,7 +338,7 @@
                   <p class="texto-principal-correspondencia">
                   Cada dato de la memoria principal, que se guarda en la memoria caché está
                   organizada a través de bloques, lo que permite un rápido acceso, estos bloques* 
-                  (los de la memoria principal y caché) están relacionados de la siguientes manera. <br>
+                  (los de la memoria principal y caché) están relacionados de la siguientes manera.<br>
                   <em> *Cantidad mínima de información que puede
                   estar presente o no en la memoria principal
                   y memoria caché</em></p>
