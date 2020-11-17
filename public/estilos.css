@@ -364,6 +364,7 @@ footer {
 
 .parrafo-correspondencia {
     position: relative;
+    padding-bottom: 5em;
 }
 
 .texto-principal-correspondencia {
@@ -376,6 +377,15 @@ footer {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.2;
+}
+
+.tabs-correspondencia {
+    background-color: rgb(230, 230, 230);
+}
+
+
+.contendor-correspondencia { 
+    padding: 5em 0;
 }
 
 .texto-principal-correspondencia em {
