@@ -347,11 +347,6 @@ footer {
     padding: 2em;
 }
 
-.imagen-cabecera {
-    width: 30%;
-    float: left;
-}
-
 .tarjetas-caché-web {
     display: flex;
     flex-wrap: wrap;
@@ -392,6 +387,27 @@ footer {
     flex-wrap: wrap; 
 }
 
-.tarjeta-web {
+.modal-cabecera {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.texto-cabecera-modal {
+
+}
+
+.imagen-cabecera-modal {
+
+}
+
+.imagen-cabecera {
+    width: 30%;
+}
+
+.texto-cabecera-modal p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    padding: 3em;
 }
