@@ -19,7 +19,8 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 2em;
-    margin-bottom: 3.5em;  
+    margin-bottom: 3.5em;
+    position: relative; 
 }
 
 h3 {
@@ -347,39 +348,6 @@ footer {
     padding: 2em;
 }
 
-.correspondencia-text {
-    font-size: 1.2rem;
-    font-weight: auto;
-    line-height: 1.2;
-    text-align: left;
-    padding: 1em;
-}
-
-.correspondencia-seccion {
-    padding-top: 2em;
-    padding-bottom: 6em;
-    width: 100%;   
-}
-
-.subtitulo-correspondencia {
-    font-style: normal;
-}
-
-.parrafo-correspondencia {
-    align-self: center;
-    width: 100%;
-}
-
-.texto-principal-correspondencia {
-    font-size: 1.2rem;
-    font-weight: auto;
-    line-height: 1.2;
-    padding: 2em;
-    max-width: 65ch;
-    padding-left: 1fr;
-    padding-right: 1fr;
-}
-
 .imagen-cabecera {
     width: 30%;
     float: left;
@@ -388,4 +356,34 @@ footer {
 .tarjetas-caché-web {
     display: flex;
     flex-wrap: wrap;
+}
+
+.correspondencia-seccion {
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+.text-container {
+    padding: 5%;
+    position: relative;
+}
+
+.parrafo-correspondencia {
+    position: relative;
+}
+
+.texto-principal-correspondencia {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+..texto-principal-correspondencia em {
+    font-size: .8rem;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es"> 
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
@@ -132,7 +132,7 @@
          <!--Tipos de Cache-->
          <section class="tipos-seccion" id="tipos">
             <div class="container">
-              <h3>Tipos</h3>
+              <h2>Tipos de caché</h2>
               <div class="row">
                 <div class="col-md-8 col-lg-6">
                   <div class="card card-inverse card-primary cache-card cache-web shadow-lg">
@@ -333,32 +333,37 @@
           <section class="correspondencia-seccion" id="correspondencia">
             <div class="container">
               <h2>Correspondencia</h2>
-              <div class="parrafo-correspondencia">
-                <p class="texto-principal-correspondencia">
-                  Cada dato de la memoria principal, que se guarda en la memoria caché está organizada a través de bloques, lo que permite un rápido acceso, estos bloques* (los de la memoria principal y caché) están relacionados de la siguientes manera.
-               </p>
-                <p><em> *Cantidad mínima de información que puede estar presente o no en la memoria principal y memoria caché</em></p>
-              </div>
-              <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Directa</a>
-                <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Totalmente asociativa</a>
-                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Asociativa por conjuntos</a>
-              </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p class="correspondencia-text">Cada bloque tiene su posición en el caché</p>
-                <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
-              </div>
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <p class="correspondencia-text">Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada uno de ellos hasta llegar a acierto.</p>
-                <img src="images/Correspondenciatotalmenteasociativa.png" alt="esquema de correspondencia totalmente" class="correspondencia-esquema">
-              </div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <p class="correspondencia-text">Es una mezcla de las anteriores, se forman conjuntos de bloques de la memoria principal, pero ellos pueden estar asignados a cualquien bloque de la memoria caché.</p>
-                <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
-              </div>
+              <div class="text-container">
+                <div class="parrafo-correspondencia">
+                  <p class="texto-principal-correspondencia">
+                  Cada dato de la memoria principal, que se guarda en la memoria caché está
+                  organizada a través de bloques, lo que permite un rápido acceso, estos bloques* 
+                  (los de la memoria principal y caché) están relacionados de la siguientes manera. <br>
+                  <em> *Cantidad mínima de información que puede
+                  estar presente o no en la memoria principal
+                  y memoria caché</em></p>
+                </div>
+                <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Directa</a>
+                  <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Totalmente asociativa</a>
+                  <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Asociativa por conjuntos</a>
+                </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <p class="correspondencia-text">Cada bloque tiene su posición en el caché</p>
+                  <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <p class="correspondencia-text">Los bloques se alojan en cualquiera de los del caché, por ello al buscar información se verifica cada uno de ellos hasta llegar a acierto.</p>
+                  <img src="images/Correspondenciatotalmenteasociativa.png" alt="esquema de correspondencia totalmente" class="correspondencia-esquema">
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <p class="correspondencia-text">Es una mezcla de las anteriores, se forman conjuntos de bloques de la memoria principal, pero ellos pueden estar asignados a cualquien bloque de la memoria caché.</p>
+                  <img src="images/Correspondenciadirecta.png" alt="esquema de correspondencia directa" class="correspondencia-esquema">
+                </div>
+                </div>
               </div>
             </div>
          </section>
