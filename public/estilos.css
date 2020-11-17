@@ -383,6 +383,14 @@ footer {
     line-height: 1.2;
 }
 
+.tabs-correspondencia {
+    background-color: rgb(26, 26, 26);
+}
+
+.contendor-correspondencia { 
+    padding: 5em 0;
+}
+
 .texto-principal-correspondencia em {
     font-size: .8rem;
 }
