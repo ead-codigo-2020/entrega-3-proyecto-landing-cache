@@ -58,6 +58,8 @@ p {
     width: 100%;
     padding-right: 5em;
     padding-left: 5em;  
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .bi {
@@ -179,6 +181,12 @@ li {
     font-size: 1rem;
     font-weight: 200;
     margin-top: 1em;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .btn-light{
@@ -186,7 +194,6 @@ li {
     border-color: none;
     vertical-align: bottom;
 }
-
 
 .card {
     margin: 10px;
@@ -283,11 +290,17 @@ li {
 }
 
 .mecanismo-text {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.2;
     text-align: center;
     padding: 2em;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 [class*="fontawesome-"]:before {
@@ -368,11 +381,10 @@ footer {
 }
 
 .texto-principal-correspondencia {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    padding: 2em;
+    padding-bottom: 0;
+    margin-right: 1em;
+    margin-left: 1em;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
@@ -381,6 +393,11 @@ footer {
 
 .tabs-correspondencia {
     background-color: rgb(230, 230, 230);
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: #0b699f;
 }
 
 .contendor-correspondencia { 
